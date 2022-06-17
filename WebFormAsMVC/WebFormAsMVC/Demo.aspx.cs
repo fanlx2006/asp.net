@@ -9,10 +9,11 @@ namespace WebFormAsMVC
 {
     public partial class Demo : System.Web.UI.Page
     {
+        public string DbData { get; set; }
         protected void Page_Load(object sender, EventArgs e)
         {
-            string str = "我是 来自于数据库的数据";
-            this.Label1.Text = str;
+            string str = "我是来自数据库的数据";
+            DbData = str;
         }
     }
 }
