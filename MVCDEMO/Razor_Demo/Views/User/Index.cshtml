@@ -40,3 +40,23 @@
         <li>@v</li>
     }
 </ul>
+
+@{ 
+    string name1 = ViewData["myname"].ToString();
+    List<string> list1 = ViewData["mylist"] as List<string>;
+    string name2 = ViewBag.name;
+}
+
+<p>@name1</p>
+<ul>
+    @{ foreach (string l in list1)
+        {
+            <li>@l</li>
+        }
+    }
+
+</ul>
+<p>@name2</p>
+
+<hr />
+<a href="~/User/SecondPage">tiaozhuan</a>

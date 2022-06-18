@@ -79,7 +79,6 @@ C:\Users\cctvf\source\asp.net_learn\MVCDEMO\MVCDEMO\bin\zh-Hans\System.Web.Razor
 C:\Users\cctvf\source\asp.net_learn\MVCDEMO\MVCDEMO\bin\zh-Hans\System.Web.WebPages.resources.dll
 C:\Users\cctvf\source\asp.net_learn\MVCDEMO\MVCDEMO\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
 C:\Users\cctvf\source\asp.net_learn\MVCDEMO\MVCDEMO\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
-C:\Users\cctvf\source\asp.net_learn\MVCDEMO\MVCDEMO\obj\Debug\MVCDEMO.csprojAssemblyReference.cache
 C:\Users\cctvf\source\asp.net_learn\MVCDEMO\MVCDEMO\obj\Debug\MVCDEMO.csproj.CoreCompileInputs.cache
 C:\Users\cctvf\source\asp.net_learn\MVCDEMO\MVCDEMO\obj\Debug\MVCDEMO.csproj.CopyComplete
 C:\Users\cctvf\source\asp.net_learn\MVCDEMO\MVCDEMO\obj\Debug\MVCDEMO.dll
