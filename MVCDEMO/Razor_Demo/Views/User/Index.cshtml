@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+@* razor 引擎知识点 *@
+@*
+    1.@{需要运行的C#}代码块:一般当需要在页面上定义多个变量是，我们使用代码
+    2.输出变量值:@变量的名称
+
+    特殊情况:输出@符号:@@:输出Email地址 @:tom@gamil.com
+*@
+
+@{ 
+    List<string> list = new List<string>() { "zhangfei","liubei","guanyu"};
+    string name = "tom";
+    int a = 4;
+    int b = 6;
+    int age = 23;
+    string color = "red";
+    string h1 = "<font color='red'>再见</font>";
+}
+
+<h1>姓名是:@name</h1>
+<h2>年龄是:@age</h2>
+@DateTime.Now;
+@(a+b)
+<font color="@color" >hello</font>
+@Html.Raw(h1);
+
+@if (a>3)
+{
+    <p>I use @@</p>
+}
+<ul>
+    @foreach (string v in list)
+    {
+        <li>@v</li>
+    }
+</ul>
