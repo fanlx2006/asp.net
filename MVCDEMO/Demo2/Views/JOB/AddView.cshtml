@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "AddView";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form method="post" name="id" action="/JOB/Save">
+    <table class="table table-bordered table-hover">
+        <tr>
+            <td>項番：</td>
+            <td><input name="id" type="text" /></td>
+        </tr>
+        <tr>
+            <td>Career：</td>
+            <td><input name="Career" type="text" /></td>
+        </tr>
+        <tr>
+            <td>Name：</td>
+            <td><input name="Name" type="text" /></td>
+        </tr>
+        <tr>
+            <td>Sex：</td>
+            <td><input name="Sex" type="text" /></td>
+        </tr>
+        <tr>
+            <td>Age：</td>
+            <td><input name="Age" type="text" /></td>
+        </tr>
+        <tr>
+            <td>Experience：</td>
+            <td><input name="Experience" type="text" /></td>
+        </tr>
+        <tr>
+            <td>Education：</td>
+            <td><input name="Education" type="text" /></td>
+        </tr>
+        <tr>
+            <td>Photo：</td>
+            <td><input name="Photo" type="text" /></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input id="Submit1" type="submit" value="OK" class="btn btn-info" /></td>
+        </tr>
+    </table>
+</form>

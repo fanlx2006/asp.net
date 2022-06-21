@@ -1,0 +1,30 @@
+﻿@using Demo2.Models
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    List<JobSeeker> j = ViewBag.data;
+}
+
+<h2>Index</h2>
+
+@*将集合J中数据显示在table里*@
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>编号</th>
+            <th>求职意向</th>
+            <th>姓名</th>
+            <th>年龄</th>
+        </tr>
+        @foreach(var item in j)
+        {
+    <tr>
+        <td>@item.Id</td>
+        <td>@item.Career</td>
+        <td>@item.Name</td>
+        <td>@item.Age</td>
+    </tr>
+        }
+    </thead>
+</table>
+<a href="/JOB/Add" class="btn btn-success">追加</a>

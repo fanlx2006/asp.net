@@ -1,0 +1,11 @@
+C:\Users\cctvf\source\asp.net_learn\EntityFramework\EntityFramework\bin\Debug\EntityFramework.exe
+C:\Users\cctvf\source\asp.net_learn\EntityFramework\EntityFramework\bin\Debug\EntityFramework.pdb
+C:\Users\cctvf\source\asp.net_learn\EntityFramework\EntityFramework\bin\Debug\EntityFramework.dll
+C:\Users\cctvf\source\asp.net_learn\EntityFramework\EntityFramework\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\cctvf\source\asp.net_learn\EntityFramework\EntityFramework\bin\Debug\EntityFramework.xml
+C:\Users\cctvf\source\asp.net_learn\EntityFramework\EntityFramework\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\cctvf\source\asp.net_learn\EntityFramework\EntityFramework\obj\Debug\EntityFramework.csproj.CoreCompileInputs.cache
+C:\Users\cctvf\source\asp.net_learn\EntityFramework\EntityFramework\obj\Debug\EntityFramework.csproj.CopyComplete
+C:\Users\cctvf\source\asp.net_learn\EntityFramework\EntityFramework\obj\Debug\EntityFramework.exe
+C:\Users\cctvf\source\asp.net_learn\EntityFramework\EntityFramework\obj\Debug\EntityFramework.pdb
+C:\Users\cctvf\source\asp.net_learn\EntityFramework\EntityFramework\bin\Debug\EntityFramework.exe.config

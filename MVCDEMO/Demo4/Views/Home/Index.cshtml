@@ -1,0 +1,9 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<a href="/Home/About?name=tom">To About</a>
+<br />
+<a href="@Url.Action("about","home",new { name= "tom"})">by URL going to about</a>
+
+@Html.ActionLink("by html going to about","About","Home",new { name = "tom"},new { style= "color:aqua"})
