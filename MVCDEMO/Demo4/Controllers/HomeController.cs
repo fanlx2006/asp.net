@@ -23,8 +23,9 @@ namespace Demo4.Controllers
 
         public ActionResult Contact()
         {
-            Math1 math1 = new Math1();
-            int ff = ExtensionMath.Add(math1,4, 5);
+            Math1 math22 = new Math1();
+            int ff = ExtensionMath.Add(math22,4, 5);
+            int yy = math22.Add(4, 5);
  
             ViewBag.Message = "Your contact page.";
 
