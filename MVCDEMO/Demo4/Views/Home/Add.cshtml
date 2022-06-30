@@ -1,0 +1,34 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    @*收集填写的信息并提交给相应的方法进行数据添加，因此要设计一个表单完成数据提交的工作*@
+    @using (Html.BeginForm("Add", "home", FormMethod.Post,new { enctype = "multipart/form-data" }))
+    {
+    <table class="table table-bordered table-hover">
+        <tr>
+            <td>编号：</td>
+            <td>@Html.TextBox("id")</td>
+        </tr>
+        <tr>
+            <td>标题：</td>
+            <td>@Html.TextBox("title")</td>
+        </tr>
+        <tr>
+            <td>价格：</td>
+            <td>@Html.TextBox("price")</td>
+        </tr>
+        <tr>
+            <td>选择上传照片</td>
+            <td><input type="file" name="myfile" /></td>
+        </tr>
+    </table>
+        <input type="submit" value="OK" class="=btn btn-success" />
+    }
+
+
+</body>
+</html>
+ 
+

@@ -83,4 +83,3 @@ C:\Users\cctvf\source\asp.net_learn\MVCDEMO\MVCDEMO\obj\Debug\MVCDEMO.csproj.Cor
 C:\Users\cctvf\source\asp.net_learn\MVCDEMO\MVCDEMO\obj\Debug\MVCDEMO.csproj.CopyComplete
 C:\Users\cctvf\source\asp.net_learn\MVCDEMO\MVCDEMO\obj\Debug\MVCDEMO.dll
 C:\Users\cctvf\source\asp.net_learn\MVCDEMO\MVCDEMO\obj\Debug\MVCDEMO.pdb
-C:\Users\cctvf\source\asp.net_learn\MVCDEMO\MVCDEMO\obj\Debug\MVCDEMO.csprojAssemblyReference.cache

@@ -1,9 +1,84 @@
-﻿@{
-    ViewBag.Title = "Home Page";
+﻿@using Demo4.Models;
+
+@*强类型数据的声明*@
+@*@Model Demo4.Models.User*@
+
+@model List<Demo4.Models.Book>
+
+@{
+    //ViewBag.Title = "Home Page";
+    //User u = ViewData["data"] as User;
+    //User u1 = ViewBag.data;
 }
 
 <a href="/Home/About?name=tom">To About</a>
 <br />
 <a href="@Url.Action("about","home",new { name= "tom"})">by URL going to about</a>
 
-@Html.ActionLink("by html going to about","About","Home",new { name = "tom"},new { style= "color:aqua"})
+@Html.ActionLink("by html going to about", "About", "Home", new { name = "tom" }, new { style = "color:aqua" })
+
+@Html.RouteLink("LinkText", new { action = "ActionName", controller = "ControllerName", id11 = 1 });
+
+@{Html.BeginForm();}
+
+@Html.Submit("ff");
+
+@{Html.EndForm();}
+<hr />
+@*<p>编号:@u.Id</p>
+    <p>姓名:@u.Name</p>
+    <p>年纪:@u.Age</p>
+    <p>照片:@u.Photo</p>*@
+
+<hr />
+强类型数据的声明
+@*方式一
+<p>编号:@Model.Id</p>
+<p>姓名:@Model.Name </ p >
+<p>年纪:@Model.Age </ p >
+<p>照片:@Model.Photo </ p>
+<hr />
+方式二
+<p>编号:@Model.Id</p>
+<p>姓名:@Model.Name </ p >
+<p>年纪:@Model.Age </ p >
+<p>照片:@Model.Photo </ p>*@
+<hr/>
+@Html.ActionLink("添加记录","Add","Home",null,new { @class="btn btn-danger"})
+<hr/>
+    @using(Html.BeginForm("Select","Home",FormMethod.Post))
+    { 
+        @Html.TextBox("name");
+        <input type="submit" value="查询" class="btn btn-danger" />
+    }
+<hr/>
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>TItle</th>
+            <th>PublicationDate</th>
+            <th>Author</th>
+            <th>Price</th>
+            <th>conduct</th>
+        </tr>
+    </thead>
+    @foreach (var item in Model)
+    {
+    <tr>
+        <td>@item.ID</td>
+        <td>@item.Title</td>
+        <td>@item.PublicationDate</td>
+        <td><img src="~/images/@item.Author" style="width:50px;height:50px" /></td>
+        <td>@item.Price</td>
+        <td>
+            @Html.ActionLink("编辑", "Edit", "Home", new { uid = item.ID }, new { @class = "btn btn-danger" })
+            @Html.ActionLink("删除", "Del", "Home", new { uid = item.ID }, new { @class = "btn btn-danger" })
+        </td>
+    </tr>
+    }
+</table>
+
+
+
+
