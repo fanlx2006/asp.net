@@ -1,0 +1,109 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="~/Scripts/jquery-3.4.1.min.js"></script>
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.metadata.js"></script>
+    <script src="~/Scripts/jquery.validate.messages_cn.js"></script>
+    <script type="text/javascript">
+
+        $(function () {
+            $("#myform").validate({
+                rules: {
+                    uname:{ required: true },
+                    pwd1: { required: true },
+                    pwd2: {required:true,equalTo:"#pwd1"}
+                },
+                messages: {
+                    name: { required: "请输入用户名!" },
+                    pwd1: { required: "请输入密码" },
+                    pwd2: {
+                        required: "请输入确认密码",
+                        equalTo:"两次密码输入的不一致"
+                    },
+                }
+
+            });
+        });
+        $(function () {
+            $("form").bind("submit", checkform);
+        })
+
+        function checkform() {
+            if (checkuser() && checkpwd1()) {
+                return true;
+            }
+            else {
+                return false;
+            }
+        }
+
+        function checkuser() {
+            if ($("#uname").val() == "") {
+                $("#ErrorMsg").html("用户名不能为空");
+                $("#uname").focus();
+                return false;
+            }
+            else {
+                $("#ErrorMsg").html("");
+                return true;
+            }
+        }
+
+        function checkpwd1() {
+            if ($("#pwd1").val() == "") {
+                $("#ErrorMsg1").html("密码不能为空");
+                $("#pwd1").focus();
+                return false;
+            }
+            else {
+                $("#ErrorMsg1").html("");
+                return true;
+            }
+        }
+
+        function ss() {
+            alert("ff");
+        }
+    </script>
+</head>
+<body>
+    @using(Html.BeginForm("Index","Home",FormMethod.Post,new { id="myform",name="myform"}))
+    {
+
+    <table class="table table-bordered">
+        <tr>
+            <td>
+                用户名:
+            </td>
+            <td>
+                @Html.TextBox("uname", "", new { onblur = "checkuser()" })
+            </td>
+            <td><span id="ErrorMsg" style="color:red"></span></td>
+        </tr>
+
+        <tr>
+            <td>
+                密码:
+            </td>
+            <td>
+                @Html.TextBox("pwd1", "", new { onblur = "checkpwd1()" })
+            </td>
+            <td><span id="ErrorMsg1" style="color:deeppink"></span></td>
+        </tr>
+
+        <tr>
+            <td>
+                确认密码:
+            </td>
+            <td>
+                @Html.TextBox("pwd2", "", new { onblur = "checkpwd2()" })
+            </td>
+            <td><span id="ErrorMsg2" style="color:deeppink"></span></td>
+        </tr>
+
+    </table>
+      <input type="submit" value="提交" class="btn btn-primary" />
+            }
+</body>
+</html>

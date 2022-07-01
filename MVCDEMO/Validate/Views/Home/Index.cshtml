@@ -1,0 +1,41 @@
+﻿@*绑定模型的类型*@
+@model Validate.Models.UserInfo
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    @using(Html.BeginForm("show","home",FormMethod.Post))
+     {
+    <table class="table table-bordered table-hover">
+        <tr>
+            <td>用户名:</td>
+            @*<td>@Html.TextBox(Model.UserName)</td>*@
+            <td>@Html.TextBoxFor(t=>t.UserName)</td>
+            <td>@Html.ValidationMessageFor(t => t.UserName)</td>
+        </tr>
+        <tr>
+            <td>密码:</td>
+            <td>@Html.TextBoxFor(t => t.Password)</td>
+            <td>@Html.ValidationMessageFor(t => t.Password)</td>
+        </tr>
+        <tr>
+            <td>确认密码:</td>
+            <td>@Html.PasswordFor(t => t.ConfirmPassword)</td>
+            <td>@Html.ValidationMessageFor(t => t.ConfirmPassword)</td>
+        </tr>
+        <tr>
+            <td>电子邮箱:</td>
+            <td>@Html.TextBoxFor(t => t.Email)</td>
+            <td>@Html.ValidationMessageFor(t => t.Email)</td>
+        </tr>
+        <tr>
+            <td>年龄:</td>
+            <td>@Html.TextBoxFor(t => t.Age)</td>
+            <td>@Html.ValidationMessageFor(t => t.Age)</td>
+        </tr>
+    </table>
+    <input type="submit" value="提交" class="btn btn-primary" />
+     }
+</body>
+</html>

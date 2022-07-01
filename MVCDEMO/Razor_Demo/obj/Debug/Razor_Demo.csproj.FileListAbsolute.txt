@@ -83,4 +83,3 @@ C:\Users\cctvf\source\asp.net_learn\MVCDEMO\Razor_Demo\obj\Debug\Razor_Demo.cspr
 C:\Users\cctvf\source\asp.net_learn\MVCDEMO\Razor_Demo\obj\Debug\Razor_Demo.csproj.CopyComplete
 C:\Users\cctvf\source\asp.net_learn\MVCDEMO\Razor_Demo\obj\Debug\Razor_Demo.dll
 C:\Users\cctvf\source\asp.net_learn\MVCDEMO\Razor_Demo\obj\Debug\Razor_Demo.pdb
-C:\Users\cctvf\source\asp.net_learn\MVCDEMO\Razor_Demo\obj\Debug\Razor_Demo.csprojAssemblyReference.cache

@@ -88,4 +88,3 @@ C:\Users\cctvf\source\asp.net_learn\MVCDEMO\Demo2\bin\EntityFramework.SqlServer.
 C:\Users\cctvf\source\asp.net_learn\MVCDEMO\Demo2\bin\EntityFramework.xml
 C:\Users\cctvf\source\asp.net_learn\MVCDEMO\Demo2\bin\EntityFramework.SqlServer.xml
 C:\Users\cctvf\source\asp.net_learn\MVCDEMO\Demo2\bin\zh-Hans\EntityFramework.resources.dll
-C:\Users\cctvf\source\asp.net_learn\MVCDEMO\Demo2\obj\Debug\Demo2.csprojAssemblyReference.cache
